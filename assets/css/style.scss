@@ -2,18 +2,21 @@
 ---
 @import "{{ site.theme }}";
 
-html, body {
-  direction: rtl;
-  text-align: right;
+/* This forces the layout even if the theme tries to stop it */
+html, body, .wrapper, .header, .footer, .page-content {
+    direction: rtl !important;
+    text-align: right !important;
 }
 
-/* This fixes the bullet points and list indentation */
-main {
-  text-align: right;
-  unicode-bidi: plaintext;
-}
-
+/* Fixes the list dots to the right side */
 ul, ol {
-  margin-right: 2em;
-  margin-left: 0;
+    margin-right: 2em !important;
+    margin-left: 0 !important;
+    list-style-position: inside !important;
+}
+
+/* Fixes the post titles and dates */
+.post-list, .post-meta, .post-link {
+    display: block !important;
+    text-align: right !important;
 }
