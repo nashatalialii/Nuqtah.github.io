@@ -1,12 +1,12 @@
-# Blog Settings
+# Website URL settings
+url: "https://nashatalialii.github.io"
+baseurl: "" 
+
+# Blog Identity
 title: "Nuqtah | نقطة"
 description: "النقاط على الحروف"
-baseurl: "" # Leave empty if your repo is username.github.io
-url: "https://nashatalialii.github.io"
-
-# Theme Setting (We will use a standard one for now)
-theme: jekyll-theme-minima
-
-# Localization for Arabic
 lang: ar
 direction: rtl
+
+# Theme (Standard GitHub theme)
+theme: jekyll-theme-minima
