@@ -1,2 +1,19 @@
-direction: rtl
-unicode-bidi: plaintext
+---
+---
+@import "{{ site.theme }}";
+
+html, body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* This fixes the bullet points and list indentation */
+main {
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+ul, ol {
+  margin-right: 2em;
+  margin-left: 0;
+}
